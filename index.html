@@ -1,334 +1,538 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>LeadsGenn Landing Page</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/5e8fa9acab.js" crossorigin="anonymous"></script>
-
-    <title>LeadsGenn Design Agency - Branding, Web, Graphic Design</title>
-
-    <!-- Meta description -->
-    <meta name="description" content="We are a leading design agency offering branding, web, mobile and graphic design services. started crafting designs that get results since 2023.">
-
-    <!-- Open Graph meta tags for social sharing -->
-    <meta property="og:title" content="LeadsGenn Designs - Top Design Agency">
-    <meta property="og:description" content="We are a leading design agency offering branding, web, mobile and graphic design services.">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="http://www.leadsgenn.github.io">
-
-    <!-- Schema.org markup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LeadsGenn - Your Design Agency for Digital Success">
+    <meta name="keywords" content="design agency, digital design, web design, graphic design, SEO">
+    <meta name="author" content="LeadsGenn">
+    <title>LeadsGenn - Design Agency</title>
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="https://www.leadsgenn.github.io">
+    <link rel="canonical" href="https://www.leadsgenn.co">
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="LeadsGenn - Design Agency">
+    <meta property="og:description" content="Unlocking Your Digital Success with Stunning Design">
+    <meta property="og:image" content="https://www.leadsgenn.github.io/logo.png">
+    <meta property="og:url" content="https://www.leadsgenn.github.io">
+    <!-- Twitter Card Tags for Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@solomon_sam_">
+    <meta name="twitter:title" content="LeadsGenn - Design Agency">
+    <meta name="twitter:description" content="Unlocking Your Digital Success with Stunning Design">
+    <meta name="twitter:image" content="https://www.leadsgenn.github.io/logo.png">
+    <!-- Schema.org markup for Google Rich Snippets -->
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Agency Designs",
-            "image": "logo.png",
-
-            // schema markup details
-
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "LeadsGenn",
+            "url": "https://www.leadsgenn.github.io",
+            "url": "https://www.leadsgenn.co",
+            "logo": "https://www.leadsgenn.github.io/images/logo.png",
+            "description": "Your Design Agency for Digital Success",
+            "sameAs": [
+                "https://instagram.com/leadsgenn",
+                "https://twitter.com/solomon_sam_",
+            ]
         }
     </script>
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="http://www.leadsgenn.github.io/">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5e8fa9acab.j" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="bg-gray-900 text-white px-4 py-8">
+    <header class="bg-gray-900 text-white px-2 py-4">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#">
                 <img src="logo.png" class="w-12" alt="LeadsGenn">
             </a>
+
+            <nav>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#services" class="text-lg text-white">Services</a></li>
+                    <li><a href="#work" class="text-lg text-white">Work</a></li>
+                    <li><a href="#about" class="text-lg text-white">About</a></li>
+                    <li><a href="#contact" class="text-lg text-white">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-gray-900 py-32 text-center">
+    <section id="hero" class="bg-gray-100 py-32 text-center">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold mb-4 text-white">Design That Converts</h1>
-            <p class="text-lg text-gray-600 mb-8">
-                We build websites and brand identities for growing companies.
-            </p>
-            <a href="#contact" class="bg-indigo-500 text-white py-4 px-8 rounded-full text-lg hover:bg-indigo-600">Get Started</a>
+            <h1 class="text-4xl font-bold mb-4">Design That Converts</h1>
+            <h4 class="text-lg text-gray-600 mb-4 ml-8 mr-8">
+                Enroll in a package and request a design.
+            </h4>
+            <br />
+            <h4 class="text-lg text-gray-600 mb-4 ml-8 mr-8">
+                Receive your designs within 24 - 48 hours flat
+            </h4>
+            <br />
+            <h4 class="text-lg text-gray-600 mb-4 ml-8 mr-8">
+                Unsatisfied? We'll fine-tune it until it's pixel-perfect for you.
+            </h4>
+            <a href="#pricing" class="bg-indigo-500 text-white py-4 px-8 rounded-full text-lg hover:bg-indigo-600">See Plans</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-black py-16">
-        <div class="container mx-auto px-4">
+    <!-- Our Services -->
+    <section id="services" class="py-20">
 
-            <h2 class="text-3xl font-semibold text-white mb-8 text-center">Our Services</h2>
+        <h2 class="text-3xl font-medium text-center mb-16">Our Services</h2>
 
-            <div class="max-w-lg mx-auto text-center">
-                <h3 class="text-2xl font-semibold mb-4 text-white">Website Design</h3>
-                <p class="text-white mb-6">
-                    We craft custom websites, landing pages and Figma designs optimized for lead generation and sales.
-                </p>
-            </div>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
 
-            <div class="max-w-lg mx-auto text-center">
-                <h3 class="text-2xl font-semibold mb-4 text-white">Branding</h3>
-                <p class="text-white mb-6">
-                    We help brands stand out through logo design, packaging, guidelines and more.
-                </p>
-            </div>
+            <!-- Website Design -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
 
-            <div class="max-w-lg mx-auto text-center">
-                <h3 class="text-2xl font-semibold mb-4 text-white">Graphic Design</h3>
-                <p class="text-white">
-                    From flyers to ads, our designers create stunning visual content.
-                </p>
-            </div>
+                <h2 class="absolute left-4 top-4">Website Design</h2>
 
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="bg-gray-900 py-16">
-
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-8 text-white">Our Work</h2>
-
-            <div class="flex flex-wrap -mx-4">
-
-                <div class="w-full md:w-1/3 px-4 mb-8">
-                    <img src="showcase4.png" alt="Project 1" class="rounded-lg">
-                </div>
-
-                <div class="w-full md:w-1/3 px-4 mb-8">
-                    <img src="showcase1.png" alt="Project 1" class="rounded-lg">
-                </div>
-
-                <div class="w-full md:w-1/3 px-4 mb-8">
-                    <img src="showcase2.png" alt="Project 2" class="rounded-lg">
-                </div>
-
-                <div class="w-full md:w-1/3 px-4 mb-8">
-                    <img src="showcase3.png" alt="Project 3" class="rounded-lg">
-                </div>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; top: 20px; right: 10">
+                    <g fill="none" fill-rule="evenodd">
+                        <g id="导航图标" stroke="#212121" stroke-width="1.5" transform="translate(-177.000000, -334.000000)">
+                            <g id="官方网站" transform="translate(177.000000, 334.000000)">
+                                <g id="编组" transform="translate(3.000000, 4.000000)">
+                                    <rect height="4.5" id="矩形" stroke-linecap="round" stroke-linejoin="round" width="5" x="7" y="12" />
+                                    <rect height="12" id="矩形" rx="1" width="19" x="0" y="0" />
+                                    <line id="路径" stroke-linecap="round" stroke-linejoin="round" x1="8.5" x2="10.5" y1="9.5" y2="9.5" />
+                                    <line id="路径" stroke-linecap="round" stroke-linejoin="round" x1="4.5" x2="14.5" y1="16.5" y2="16.5" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
 
             </div>
 
-        </div>
+            <!-- Social Graphics -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
 
-    </section>
+                <h2 class="absolute left-4 top-4">Social Graphics</h2>
 
-    <!-- About Section -->
-    <section id="about" style="background-color: #010312" class="py-16">
-
-        <div class="container mx-auto px-4">
-
-            <h2 class="text-3xl font-semibold text-center mb-16 text-white">Why Choose Us</h2>
-
-            <p class="text-lg text-center mb-8 px-8 text-white">
-                We are a talented team of designers and developers dedicated to creating successful websites and brands.
-            </p>
-
-            <div class="flex flex-wrap -mx-4">
-
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-4 text-white">100% Custom Design</h3>
-                    <p class="text-gray-600">
-                        We design completely custom websites tailored to your brand and goals.
-                    </p>
-                </div>
-
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-4 text-white">Complete Ownership</h3>
-                    <p class="text-gray-600">
-                        You own all website assets including code, graphics, content and design.
-                    </p>
-                </div>
-
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-4 text-white">Built for Performance</h3>
-                    <p class="text-gray-600">
-                        We build websites with speed and SEO best practices in mind.
-                    </p>
-                </div>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 20px; right: 10">
+                    <path opacity="0.5" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" fill="#1C274C" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7184 7.21546C11.8374 6.81872 11.6123 6.40061 11.2155 6.28158C10.8188 6.16256 10.4007 6.3877 10.2816 6.78444L9.54198 9.24995H7C6.58579 9.24995 6.25 9.58574 6.25 9.99995C6.25 10.4142 6.58579 10.75 7 10.75H9.09198L8.34198 13.25H6C5.58579 13.25 5.25 13.5857 5.25 14C5.25 14.4142 5.58579 14.75 6 14.75H7.89198L7.28163 16.7844C7.16261 17.1812 7.38774 17.5993 7.78449 17.7183C8.18123 17.8373 8.59935 17.6122 8.71837 17.2155L9.45802 14.75H12.892L12.2816 16.7844C12.1626 17.1812 12.3877 17.5993 12.7845 17.7183C13.1812 17.8373 13.5993 17.6122 13.7184 17.2155L14.458 14.75H17C17.4142 14.75 17.75 14.4142 17.75 14C17.75 13.5857 17.4142 13.25 17 13.25H14.908L15.658 10.75H18C18.4142 10.75 18.75 10.4142 18.75 9.99995C18.75 9.58574 18.4142 9.24995 18 9.24995H16.108L16.7184 7.21546C16.8374 6.81872 16.6123 6.40061 16.2155 6.28158C15.8188 6.16256 15.4007 6.3877 15.2816 6.78444L14.542 9.24995H11.108L11.7184 7.21546ZM14.092 10.75L13.342 13.25H9.90802L10.658 10.75H14.092Z" fill="#1C274C" />
+                </svg>
 
             </div>
 
-        </div>
+            <!-- Logo/Brand Identity Graphics -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
 
-    </section>
+                <h2 class="absolute left-4 top-4">Logo/Brand Identity Designs</h2>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="bg-gray-100 py-16" style="background-color: #1D1D1D">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" style="position: absolute; right: 10px; top: 20px;" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z" /></svg>
 
-        <div class="container mx-auto px-4">
+            </div>
 
-            <h2 class="text-3xl font-semibold text-center mb-16 text-white">What Our Clients Say</h2>
+            <!-- Package Design Graphics -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
 
-            <div class="flex flex-wrap -mx-4">
+                <h2 class="absolute left-4 top-4">Package Designs</h2>
 
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <div class="rounded-lg p-6 shadow-lg" style="background-color: #010312">
-                        <p class="text-lg text-gray-600 mb-4">
-                            "Working with LeadsGenn was a fantastic experience. They delivered an amazing website that surpassed all our expectations."
-                        </p>
-                        <div class="flex items-center mt-4">
-                            <img src="avatar1.png" alt="Avatar" class="w-10 h-10 rounded-full mr-4">
-                            <div>
-                                <p class="text-lg font-semibold mb-0 text-white">
-                                    David Andrew
-                                </p>
-                                <p class="text-gray-600">
-                                    ABC Company
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <svg fill="#000000" width="30px" height="30px" viewBox="0 0 14 14" style="position: absolute; top: 20px; right: 10"><path d="m 8.9179484,10.166436 -0.330489,0.57659 -0.10782,1.87981 c 0,0.20861 -0.663323,0.37737 -1.479,0.37737 -0.815677,0 -1.479001,-0.16876 -1.479001,-0.37737 l -0.135946,-1.86105 -0.349241,-0.59535 c 0.965687,0.40549 2.953313,0.39143 3.881497,0 z m -4.594043,-5.9370996 0.318771,2.94159 c 0.13829,-0.46878 0.487531,-1.10163 0.93756,-1.29383 0.147665,-0.0633 0.297675,-0.0633 0.438309,0.0211 0.121883,0.0703 0.225014,0.21799 0.236734,0.27658 0.02813,0.15236 -0.04688,0.2133 -0.105476,0.2133 -0.07032,0 -0.124226,-0.10782 -0.159385,-0.17111 -0.0961,-0.1711 -0.241422,-0.17813 -0.396119,-0.0656 -0.161729,0.11719 -0.302363,0.31408 -0.400807,0.48518 -0.119539,0.20627 -0.220326,0.43362 -0.281268,0.66098 -0.03516,0.13126 -0.06797,0.34221 -0.01406,0.46644 0.02344,0.0516 0.0586,0.0844 0.114851,0.0844 0.117195,0 0.2883,-0.1547 0.370336,-0.23673 0.105476,-0.10548 0.241422,-0.26955 0.292987,-0.37503 l 0.121883,-0.3633 c 0.06094,-0.15939 0.232046,-0.13126 0.232046,0 0,0.23907 -0.08672,0.31877 -0.23439,0.81333 -0.135946,0.45706 -0.178136,0.60473 -0.178136,0.60473 -0.01641,0.0656 -0.07969,0.17579 -0.147666,0.17579 -0.02813,0 -0.04922,-0.009 -0.06094,-0.0281 -0.02344,-0.0328 -0.0211,-0.12423 -0.01875,-0.14766 0.0047,-0.075 0.147665,-0.52035 0.171104,-0.59067 -0.04688,0.0516 -0.0961,0.10313 -0.150009,0.1547 -0.126571,0.11954 -0.33049,0.27658 -0.503939,0.27658 -0.07969,0 -0.131258,-0.0211 -0.18048,-0.0562 l 0.178137,1.86574 c 0.04688,0.1171996 0.918808,0.4008096 2.067319,0.4008096 1.150855,0 2.022785,-0.28596 2.067319,-0.4008096 l 0.255485,-2.21733 c -0.133602,0.12189 -0.288299,0.27189 -0.459404,0.3469 -0.126571,0.0539 -0.407839,0.0891 -0.407839,-0.1336 0,-0.12189 0.213295,-0.3469 0.337522,-0.50394 0.03281,-0.0399 0.110163,-0.13829 0.110163,-0.18986 0,-0.068 -0.140634,-0.0516 -0.274236,0.0586 -0.07501,0.0633 -0.145322,0.14767 -0.203919,0.22736 -0.100788,0.14063 -0.154698,0.26252 -0.199232,0.3633 -0.145321,0.33284 -0.0961,0.20158 -0.213295,0.51566 -0.117195,0.31174 -0.09844,0.27658 -0.121882,0.32815 -0.0211,0.0445 -0.05157,0.082 -0.09376,0.10547 -0.04453,0.0234 -0.105476,0.0211 -0.142978,-0.007 -0.02109,-0.0141 -0.03047,-0.0445 -0.03047,-0.0867 0,-0.0211 0.0023,-0.0422 0.007,-0.0633 0.03516,-0.14298 0.182824,-0.42424 0.351585,-0.80396 0.0375,-0.0867 0.02344,-0.0609 0.01875,-0.0539 -0.145322,0.14064 -0.255485,0.20861 -0.337522,0.24611 -0.135946,0.0609 -0.304706,0.0609 -0.339865,-0.0961 -0.0023,-0.009 -0.0023,-0.0187 -0.0047,-0.0281 -0.27658,0.21564 -0.569567,0.27423 -0.46878,-0.18986 -0.107819,0.1922 -0.295331,0.34924 -0.525033,0.34924 -0.0961,0 -0.166417,-0.0328 -0.201576,-0.11954 -0.05391,-0.12891 0.03047,-0.34924 0.10782,-0.55785 0.03985,-0.10547 0.09376,-0.23204 0.166417,-0.37971 0.0375,-0.0797 0.09844,-0.12657 0.178136,-0.10547 0.01406,0.005 0.02578,0.009 0.0375,0.0164 0.06094,0.0422 0.0375,0.10548 0.007,0.16877 -0.08907,0.17579 -0.166417,0.3047 -0.217982,0.48753 -0.0211,0.0774 -0.04688,0.21095 0.03516,0.21095 0.05625,0 0.110163,-0.0188 0.161729,-0.0563 0.107819,-0.0797 0.194544,-0.19923 0.260173,-0.31642 0.04688,-0.0844 0.103131,-0.19455 0.131258,-0.2883 0.01172,-0.0399 0.02578,-0.0774 0.04219,-0.11251 0.02578,-0.0586 0.06094,-0.11954 0.121883,-0.11954 0.03047,0 0.05625,0.0117 0.075,0.0352 0.03985,0.0516 0.03047,0.10548 0.0094,0.16173 -0.04688,0.13126 -0.110164,0.24845 -0.161729,0.39143 -0.03047,0.082 -0.06329,0.18751 -0.06329,0.27424 0,0.0797 0.08672,0.0609 0.159385,0.0281 0.05625,-0.0258 0.112508,-0.0656 0.159386,-0.10547 0.02813,-0.11485 0.0211,-0.0891 0.618789,-1.59854 0.03047,-0.0773 0.08672,-0.11016 0.142978,-0.11016 0.02813,0 0.05157,0.009 0.07501,0.0258 0.03985,0.0305 0.03985,0.0961 0.02344,0.14532 -0.01641,0.0445 -0.01406,0.0305 -0.105476,0.24611 -0.121883,0.28361 -0.201575,0.48753 -0.309394,0.7477 -0.04453,0.10782 -0.180481,0.443 -0.20392,0.52269 -0.01406,0.0516 -0.03047,0.13595 0.02344,0.13595 0.126571,0 0.452373,-0.30705 0.541441,-0.39846 0.0047,-0.007 0.01172,-0.009 0.02109,-0.0141 0.01406,-0.0445 0.02813,-0.0867 0.03985,-0.12891 0.03281,-0.0891 0.06329,-0.1922 0.124227,-0.26486 0.01875,-0.0234 0.03985,-0.0375 0.06329,-0.0375 0.06563,0 0.09844,0.0281 0.09844,0.0937 0,0.0258 -0.01641,0.11954 -0.02578,0.14532 0.03281,-0.0352 0.06797,-0.0703 0.105476,-0.10547 0.351585,-0.3258 0.602382,-0.15939 0.602382,0.005 0,0.17344 -0.208607,0.41487 -0.323458,0.54847 -0.0375,0.0445 -0.114851,0.12657 -0.117195,0.15001 0,0.0305 0.02109,0.0422 0.05157,0.0422 0.04688,0 0.150009,-0.082 0.187512,-0.11017 0.117195,-0.0914 0.27658,-0.23204 0.389087,-0.33049 l 0.346897,-3.20645 c -0.714889,0.40081 -4.631545,0.40315 -5.351123,0.005 z m 5.383938,-0.19923 c 0,0.49222 -5.419096,0.49222 -5.419096,0 0,-0.20627 1.21414,-0.37268 2.709548,-0.37268 0.210951,0 0.417214,0.002 0.616445,0.009 l 0.295332,-1.14148 1.43681,-1.51181 c 0.03281,-0.0328 0.135946,-0.005 0.232046,0.082 0.0961,0.0867 0.154697,0.18517 0.124227,0.21799 l -0.0023,0.002 -1.343055,1.41806 -0.234389,0.95397 c 0.935215,0.0609 1.584476,0.18985 1.584476,0.34221 z m -1.626667,0.10782 c 0,-0.0188 -0.02109,-0.0352 -0.0586,-0.0492 l -0.0047,0.0188 c 0,0.0305 -0.117195,0.0562 -0.260173,0.0562 -0.142978,0 -0.260173,-0.0258 -0.260173,-0.0562 0,-0.002 0,-0.005 0.0023,-0.007 l 0.0047,-0.0164 c -0.04219,0.0141 -0.07032,0.0328 -0.07032,0.0539 0,0.0492 0.145322,0.0867 0.321114,0.0867 0.180481,0.002 0.325802,-0.0375 0.325802,-0.0867 z" /></svg>
 
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <div class="rounded-lg p-6 shadow-lg" style="background-color: #010312">
-                        <p class="text-lg text-gray-600 mb-4">
-                            "The new branding LeadsGenn created captures our company personality perfectly. Our sales increased by 30% as a result!"
-                        </p>
-                        <div class="flex items-center mt-4">
-                            <img src="avatar2.png" alt="Avatar" class="w-10 h-10 rounded-full mr-4">
-                            <div>
-                                <p class="text-lg font-semibold mb-0 text-white">
-                                    John Smith
-                                </p>
-                                <p class="text-gray-600">
-                                    Essential Communications
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
-                <div class="w-full lg:w-1/3 px-4 mb-8">
-                    <div class="rounded-lg p-6 shadow-lg" style="background-color: #010312">
-                        <p class="text-lg text-gray-600 mb-4">
-                            "LeadsGenn was a joy to work with. They were communicative, responsive and delivered high quality results on time and on budget."
-                        </p>
-                        <div class="flex items-center mt-4">
-                            <img src="avatar3.png" alt="Avatar" class="w-10 h-10 rounded-full mr-4">
-                            <div>
-                                <p class="text-lg font-semibold mb-0 text-white">
-                                    Lisa Zhang
-                                </p>
-                                <p class="text-gray-600">
-                                    Startup Ltd.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Email Graphics -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
+
+                <h2 class="absolute left-4 top-4">Email Graphics</h2>
+
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" style="position: absolute; top: 20px; right: 10">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM8 8H16C16.55 8 17 8.45 17 9V15C17 15.55 16.55 16 16 16H8C7.45 16 7 15.55 7 15L7.005 9C7.005 8.45 7.45 8 8 8ZM12 12.5L8.00001 9.99997V15H16V9.99997L12 12.5ZM12 11.5L8.00001 9.00001H16L12 11.5Z" fill="#000000" />
+                </svg>
+            </div>
+
+            <!-- Digital Ads -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
+
+                <h2 class="absolute left-4 top-4">Digital Ads</h2>
+
+                <svg version="1.0" id="Layer_1" width="24px" height="24px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" style="position: absolute; top: 20px; right: 10">
+                    <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4
+                        S62.209,28.001,59.998,28.001z" />
+                    <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4
+                        c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z" />
+                    <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465
+                        l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z" />
+                    <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24
+                        C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305
+                        c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z" />
+                </svg>
+            </div>
+
+            <!-- Infographics -->
+            <div class="rounded-lg bg-gray-100 w-[90%] h-16 relative transition hover:scale-105 sm:w-[47.5%]" style="margin: 5%">
+
+                <h2 class="absolute left-4 top-4">Infographics</h2>
+
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" style="position: absolute; top: 20px; right: 10">
+                    <path opacity="0.5" d="M6.22209 4.60105C6.66665 4.304 7.13344 4.04636 7.6171 3.82976C8.98898 3.21539 9.67491 2.9082 10.5875 3.4994C11.5 4.09061 11.5 5.06041 11.5 7.00001V8.50001C11.5 10.3856 11.5 11.3284 12.0858 11.9142C12.6716 12.5 13.6144 12.5 15.5 12.5H17C18.9396 12.5 19.9094 12.5 20.5006 13.4125C21.0918 14.3251 20.7846 15.011 20.1702 16.3829C19.9536 16.8666 19.696 17.3334 19.399 17.7779C18.3551 19.3402 16.8714 20.5578 15.1355 21.2769C13.3996 21.9959 11.4895 22.184 9.64665 21.8175C7.80383 21.4509 6.11109 20.5461 4.78249 19.2175C3.45389 17.8889 2.5491 16.1962 2.18254 14.3534C1.81598 12.5105 2.00412 10.6004 2.72315 8.86451C3.44218 7.12861 4.65982 5.64492 6.22209 4.60105Z" fill="#1C274C" />
+                    <path d="M21.446 7.06901C20.6342 5.00831 18.9917 3.36579 16.931 2.55398C15.3895 1.94669 14 3.34316 14 5.00002V9.00002C14 9.5523 14.4477 10 15 10H19C20.6569 10 22.0533 8.61055 21.446 7.06901Z" fill="#1C274C" />
+                </svg>
 
             </div>
 
         </div>
 
     </section>
+</div>
 
-    <!-- Call to Action -->
-    <section id="cta" class="bg-indigo-500 text-white py-16">
+</div>
 
-        <div class="container mx-auto px-4">
+</section>
 
-            <h2 class="text-3xl font-semibold text-center mb-8">Ready to Get Started?</h2>
-            <p class="text-lg text-center mb-12">
-                Schedule a call to discuss your website and branding needs.
-            </p>
+<!-- Work Section -->
+<section id="work" class="bg-gray-100 py-16">
 
-            <div class="flex justify-center">
-                <a href="#contact" class="bg-black text-indigo-500 py-4 px-8 rounded-full text-lg hover:text-white hover:bg-indigo-600">Contact Us</a>
-            </div>
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-semibold text-center mb-8">Our Work</h2>
 
-        </div>
+<div class="flex flex-wrap -mx-4">
 
-    </section>
+<div class="w-full md:w-1/3 px-4 mb-8">
+<img src="showcase1.jpeg" alt="Project 1" class="rounded-lg">
+</div>
 
-    <!-- Contact -->
-    <section id="contact" class="bg-black py-16">
+<div class="w-full md:w-1/3 px-4 mb-8">
+<img src="showcase2.png" alt="Project 2" class="rounded-lg">
+</div>
 
-        <div class="container mx-auto px-4">
+<div class="w-full md:w-1/3 px-4 mb-8">
+<img src="showcase3.jpeg" alt="Project 3" class="rounded-lg">
+</div>
 
-            <h2 class="text-3xl font-semibold text-center mb-8 text-white">Contact Us</h2>
+<div class="w-full md:w-1/3 px-4 mb-8">
+<img src="showcase4.png" alt="Project 3" class="rounded-lg">
+</div>
 
-            <div class="max-w-lg mx-auto">
-                <div class="flex flex-wrap mb-4">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-                        <input type="text" id="name" class="shadow p-4 w-full border rounded">
-                    </div>
-                    <div class="w-full md:w-1/2 px-3">
-                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-                        <input type="email" id="email" class="shadow p-4 w-full border rounded">
-                    </div>
-                </div>
-                <div class="flex flex-wrap mb-4">
-                    <div class="w-full px-3">
-                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-                        <textarea id="message" rows="8" class="shadow p-4 w-full border rounded"></textarea>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <a href="https://ia35wgrgq1g.typeform.com/to/DSqcOLLy">
-                        <div class="bg-indigo-500 text-white px-8 py-4 rounded focus:outline-none hover:bg-indigo-600">
-                            Send Message
-                        </div>
-                    </a>
-                </div>
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </section>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+<!-- About Section -->
+<section id="about" class="bg-white py-16">
 
-        <div class="container mx-auto px-4">
+<div class="container mx-auto px-4">
 
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full lg:w-1/4 px-4 mb-12">
-                    <img src="logo.png" class="mb-8 w-12" alt="LeadsGenn">
-                    <p class="text-gray-400">
-                        Generating leads for your business since 2023.
-                    </p>
-                </div>
+<h2 class="text-3xl font-semibold text-center mb-16">Why Choose Us</h2>
 
-                <div class="w-full lg:w-1/4 px-4 mb-12">
-                    <h4 class="text-xl font-semibold mb-4">Services</h4>
-                    <ul class="list-none">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Website Design</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Branding</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Graphics</a></li>
-                    </ul>
-                </div>
+<p class="text-lg text-center mb-8 px-8">
+We are a talented team of designers and developers dedicated to creating successful visuals and brands, whilst saving you the cost of a full time developer.
+</p>
 
-                <div class="w-full lg:w-1/4 px-4 mb-12">
-                    <h4 class="text-xl font-semibold mb-4">Get in Touch</h4>
-                    <p class="text-gray-400 mb-4">
-                        Schedule a date On Calendly
-                    </p>
-                    <a href="https://calendly.com/solomon_sam/the-business-side-of-ai-discussed" class="w-12 h-8 mt-10">
-                        <i class="fa-solid fa-calendar-days fa-xl"></i>
-                    </a>
-                </div>
+<div class="flex flex-wrap -mx-4">
 
-                <div class="w-full lg:w-1/4 px-4">
-                    <h4 class="text-xl font-semibold mb-4">See Our Work Showcase</h4>
-                    <div class="flex space-x-4">
-                        <!-- Instagram -->
-                        <a href="https://instagram.com/leadsgenn?igshid=OGQ5ZDc2ODk2ZA==" class="text-gray-400 hover:text-white">
-                            <i class="fa-brands fa-square-instagram fa-xl"></i>
-                        </a>
-                        <!-- Dribble -->
-                        <a href="https://dribbble.com/leadsgenn/" class="text-gray-400 hover:text-white">
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </footer>
+<div class="w-full lg:w-1/3 px-4 mb-8">
+<svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+<h3 class="text-2xl font-semibold mb-4">100% Custom Design</h3>
+<p class="text-gray-600">
+We design completely custom visuals tailored to your brand and goals.
+</p>
+</div>
+
+<div class="w-full lg:w-1/3 px-4 mb-8">
+<svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+<h3 class="text-2xl font-semibold mb-4">Complete Ownership</h3>
+<p class="text-gray-600">
+You own all visual assets including code/wireframe, graphics, content and design.
+</p>
+</div>
+
+<div class="w-full lg:w-1/3 px-4 mb-8">
+<svg class="w-16 h-16 text-indigo-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+<h3 class="text-2xl font-semibold mb-4">Built for Performance</h3>
+<p class="text-gray-600">
+We build designs with speed, flexibility and SEO best practices in mind.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-gray-100 py-12">
+
+<div class="container mx-auto px-1">
+
+<h2 class="text-3xl font-medium text-center mb-8">Pricing Plans (20% off) </h2>
+
+<div class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-1 max-w-3xl mx-auto">
+
+<div class="flex flex-col p-6 rounded-lg border border-gray-200 text-center">
+<h3 class="text-2xl font-medium mb-4">Basic</h3>
+<p class="text-4xl font-bold text-indigo-500 mb-5">
+$1,000/m
+</p>
+<ul class="space-y-3 mx-auto text-gray-500">
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited requests</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 request at a time</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1-2 business day delivery</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited revisions/iterations</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pause or cancel anytime</li>
+</ul>
+<a href="https://flutterwave.com/pay/qflri9j4stsy" target="_blank">
+<button class="block mx-auto mt-6 bg-indigo-500 text-white py-2 px-6 rounded-full hover:bg-indigo-600">Choose Plan</button>
+</a>
+</div>
+<!-- Standard -->
+<div class="flex flex-col p-6 rounded-lg border border-gray-200 text-center">
+<h3 class="text-2xl font-medium mb-4">Standard</h3>
+<p class="text-4xl font-bold text-indigo-500 mb-6">
+$3,000/m
+</p>
+<ul class="space-y-3 mx-auto text-gray-500">
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited Requests</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 request at a time</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1-2 busuness day delivery</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited revision/iterations</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited stock photos & premium mockups via midjourney</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pause or cancel anytime</li>
+</ul>
+<a href="https://flutterwave.com/pay/i2gk3peykvau" target="_blank">
+<button class="block mx-auto mt-6 bg-indigo-500 text-white py-2 px-6 rounded-full hover:bg-indigo-600">Choose Plan</button>
+</a>
+</div>
+<!-- Premium -->
+<div class="flex flex-col p-6 rounded-lg border border-gray-200 text-center">
+<h3 class="text-2xl font-medium mb-4">Premium</h3>
+<p class="text-4xl font-bold text-indigo-500 mb-6">
+$5,000/m
+</p>
+<ul class="space-y-3 mx-auto text-gray-500">
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited Requests</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="font-bold mr-1">2</span> request at a time</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1-2 business day delivery</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited revision/iterations</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited stock photos & premium mockups via midjourney</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pause or cancel anytime</li>
+</ul>
+<a href="https://flutterwave.com/pay/oufvfxu2urhw" target="_blank">
+<button class="block mx-auto mt-6 bg-indigo-500 text-white py-2 px-6 rounded-full hover:bg-indigo-600">Choose Plan</button>
+</a>
+</div>
+
+<!-- Get Quoted -->
+<div class="flex flex-col p-6 rounded-lg border border-gray-200 text-center">
+<h3 class="text-2xl font-medium mb-4">Custom Plan</h3>
+<p class="text-4xl font-bold text-indigo-500 mb-6">
+Get Quoted
+</p>
+<ul class="space-y-3 mx-auto text-gray-500">
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Custom Request Amount</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited Requests</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>custom requests at a time</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>priority deliveries</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited revision/iterations</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited stock photos & premium mockups via midjourney</li>
+<li class="flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pause or cancel anytime</li>
+</ul>
+<a href="#contact">
+<button class="block mx-auto mt-6 bg-indigo-500 text-white py-2 px-6 rounded-full hover:bg-indigo-600">Contact Us</button>
+</a>
+</div>
+</div>
+
+</div>
+
+<!-- Promo -->
+<section id="promo" class="bg-indigo-100 py-8 ml-3 mr-3 mt-6">
+
+<div class="container mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-4">Special Launch Offer!</h2>
+
+<p class="text-xl mb-4">
+For a limited time, get <span class="font-bold text-indigo-500">20% off</span> your first month on any plan!
+</p>
+
+<a href="#pricing" class="bg-indigo-500 text-white py-4 px-8 rounded-full text-1xl hover:bg-indigo-600 w-15 h-10">Get Started</a>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="bg-gray-100 py-16" style="display: none">
+
+<div class="container mx-auto px-4">
+
+<h2 class="text-3xl font-semibold text-center mb-16">What Our Clients Say</h2>
+
+<div class="flex flex-wrap -mx-4">
+
+<div class="w-full lg:w-1/3 px-4 mb-8">
+<div class="bg-white rounded-lg p-6 shadow-lg">
+<p class="text-lg text-gray-600 mb-4">
+"The best branding agency out there. LeadsGenn created designs that captured our company's personality perfectly and helped drive sales"
+</p>
+<div class="flex items-center mt-4">
+<img src="avatar2.png" alt="Avatar" class="w-10 h-10 rounded-full mr-4">
+<div>
+<p class="text-lg font-semibold mb-0">
+Nicholas Campton
+</p>
+<p class="text-gray-600">
+Nic Essentials
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Call to Action -->
+<section id="cta" class="bg-indigo-500 text-white py-16">
+
+<div class="container mx-auto px-4">
+
+<h2 class="text-3xl font-semibold text-center mb-8">Ready to Get Started?</h2>
+<p class="text-lg text-center mb-12">
+Send a message to now to discuss your needs.
+</p>
+
+<div class="flex justify-center">
+<a href="#contact" class="bg-white text-indigo-500 py-4 px-8 rounded-full text-lg hover:text-white hover:bg-indigo-600">Contact Us</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-gray-100 py-16">
+
+<div class="container mx-auto px-4">
+
+<h2 class="text-3xl font-medium text-center mb-12">Frequently Asked Questions</h2>
+
+<div class="flex flex-col space-y-10">
+
+<details class="w-full border rounded-lg">
+<summary class="px-4 py-6 font-medium bg-gray-200 cursor-pointer">What is your design process?</summary>
+<div class="px-4 py-6 bg-gray-50">
+<p class="text-gray-700">
+Our design process is very easy, we use trello/clickup to manage design requests and Slack/𝕏 for communication.
+</p>
+</div>
+</details>
+
+<details class="w-full border rounded-lg">
+<summary class="px-4 py-6 font-medium bg-gray-200 cursor-pointer">How many designs do i get in a month?</summary>
+<div class="px-4 py-6 bg-gray-50">
+<p class="text-gray-700">
+This depends on the complexity of the task. You can send as many requests as your plan carries and get them done one at a time.
+</p>
+</div>
+</details>
+
+<details class="w-full border rounded-lg">
+<summary class="px-4 py-6 font-medium bg-gray-200 cursor-pointer">How fast will I receive my designs?</summary>
+<div class="px-4 py-6 bg-gray-50">
+<p class="text-gray-700">
+Simple requests?! 1-2 business days. Complex requests?! may take more time.
+</p>
+</div>
+</details>
+
+<details class="w-full border rounded-lg">
+<summary class="px-4 py-6 font-medium bg-gray-200 cursor-pointer">Do you offer refunds?</summary>
+<div class="px-4 py-6 bg-gray-50">
+<p class="text-gray-700">
+No! With the amount of work and expertise put into every design, we will require compensation.
+</p>
+</div>
+</details>
+
+<details class="w-full border rounded-lg">
+<summary class="px-4 py-6 font-medium bg-gray-200 cursor-pointer">Your plans are lower than other agencies, why?</summary>
+<div class="px-4 py-6 bg-gray-50">
+<p class="text-gray-700">
+As a fresh new agency, our purpose for this is to build relationship with clients with our relatively low cost, whilst delivering top-end quality.
+</p>
+</div>
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-white py-16">
+
+<div class="container mx-auto px-4 w-50">
+
+<h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+<script>
+hbspt.forms.create({
+region: "eu1",
+portalId: "143391862",
+formId: "b0763ec7-8e9d-43d5-a879-2ba7e83cc531"
+});
+</script>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+
+<div class="container mx-auto px-4">
+
+<div class="flex flex-wrap -mx-4">
+<div class="w-full lg:w-1/4 px-4 mb-12">
+<img src="logo.png" class="mb-8 w-12 h-12" alt="LeadsGenn">
+<p class="text-gray-400">
+Generating leads for your brand since 2023.
+</p>
+</div>
+
+<div class="w-full lg:w-1/4 px-4">
+<h4 class="text-xl font-semibold mb-4">Our Skill Showcase</h4>
+<div class="flex space-x-4">
+<!-- Instagram -->
+<a href="https://instagram.com/leadsgenn?igshid=OGQ5ZDc2ODk2ZA==" class="text-gray-400 hover:text-white">
+<i class="fa-brands fa-square-instagram fa-xl"></i>
+</a>
+<!-- Dribbble -->
+<a href="https://dribbble.com/leadsgenn" class="text-gray-400 hover:text-white">
+<i class="fa-brands fa-square-dribbble fa-xl"></i>
+</a>
+
+<!-- Medium -->
+<a href="aiconomics.medium.com" class="text-gray-400 hover:text-white">
+<i class="fa-brands fa-medium fa-xl"></i>
+</a>
+
+<!-- Substack -->
+<a href="https://aiconomics.substack.com" class="text-gray-400 hover:text-white">
+<i class="fa-solid fa-newspaper fa-xl"></i>
+</a>
+
+<!-- Twitter -->
+<a href="https://twitter.com/solomon_sam_" class="text-gray-400 hover:text-white">
+<i class="fa-brands fa-square-x-twitter fa-xl"></i>
+</a>
+
+</div>
+</div>
+</body>
+</html>
